@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Important Topics | Aapka Notes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-flex">
+        <h1 class="logo">Aapka<span>Notes</span></h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../notes/notes.html">Notes</a></li>
+                <li><a href="../pyq/pyq.html">PYQs</a></li>
+                <li><a href="../subjects/subjects.html">Subjects</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- IMPORTANT TOPICS -->
+<section class="dashboard">
+    <div class="container">
+
+        <h2 class="section-title">AI Important Topics Generator</h2>
+        <p style="text-align:center; margin-bottom:30px; color:#666;">
+            Select subject & semester and let AI predict exam-important topics
+        </p>
+
+        <!-- INPUTS -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <label>Subject</label>
+                <input id="subjectInput" type="text" placeholder="e.g. Data Structures">
+            </div>
+
+            <div class="stat-card">
+                <label>Semester</label>
+                <input id="semesterInput" type="text" placeholder="e.g. Semester 3">
+            </div>
+
+            <div class="stat-card">
+                <label>Exam Type</label>
+                <input id="examInput" type="text" placeholder="Mid / End / University">
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+            <button class="btn" onclick="generateTopics()">Generate Important Topics</button>
+        </div>
+
+        <!-- OUTPUT -->
+        <div class="dashboard-grid" id="topicsOutput" style="margin-top:40px;"></div>
+
+    </div>
+</section>
+
+<!-- AI CHAT -->
+<div class="ai-chat">
+    <button class="ai-btn">🤖</button>
+
+    <div class="ai-box">
+        <div class="ai-header">Aapka AI <span>Gemini</span></div>
+        <div class="ai-messages">
+            <div class="ai-msg bot">Ask me exam doubts anytime 📘</div>
+        </div>
+        <div class="ai-input">
+            <input type="text" placeholder="Ask your doubt..." />
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- JS -->
+<script src="../../js/gemini.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/important.js"></script>
+</body>
+</html>

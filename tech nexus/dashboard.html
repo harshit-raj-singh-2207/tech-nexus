@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Aapka Notes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="container nav-flex">
+        <h1 class="logo">Aapka<span>Notes</span></h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="notes/notes.html">Notes</a></li>
+                <li><a href="pyq/pyq.html">PYQs</a></li>
+                <li><a href="subjects/subjects.html">Subjects</a></li>
+                <li><a href="important/important.html">Important</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= DASHBOARD ================= -->
+<section class="dashboard">
+    <div class="container">
+
+        <h2 class="section-title">Dashboard</h2>
+
+        <!-- Quick Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>📘 Notes</h3>
+                <p>Semester-wise study material</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>📄 PYQs</h3>
+                <p>Previous year questions</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>📚 Subjects</h3>
+                <p>Topic-wise learning</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>⭐ Important</h3>
+                <p>Exam-focused topics</p>
+            </div>
+        </div>
+
+        <!-- Main Actions -->
+        <div class="dashboard-grid">
+
+            <a href="notes/notes.html" class="dashboard-card">
+                <h3>Semester Notes</h3>
+                <p>Browse notes semester-wise and subject-wise.</p>
+            </a>
+
+            <a href="pyq/pyq.html" class="dashboard-card">
+                <h3>Previous Year Questions</h3>
+                <p>Practice PYQs to understand exam patterns.</p>
+            </a>
+
+            <a href="subjects/subjects.html" class="dashboard-card">
+                <h3>Subject-wise Notes</h3>
+                <p>Focus on individual subjects and topics.</p>
+            </a>
+
+            <a href="important/important.html" class="dashboard-card">
+                <h3>Important Topics</h3>
+                <p>Last-minute revision and scoring topics.</p>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= AI CHAT ================= -->
+<div class="ai-chat">
+    <button class="ai-btn">🤖</button>
+
+    <div class="ai-box">
+        <div class="ai-header">
+            Aapka AI <span>Gemini</span>
+        </div>
+
+        <div class="ai-messages">
+            <div class="ai-msg bot">
+                Hi! Ask me anything related to your exams 📘
+            </div>
+        </div>
+
+        <div class="ai-input">
+            <input type="text" placeholder="Ask your doubt..." />
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-flex">
+        <p>© 2026 Aapka Notes. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="../js/gemini.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
